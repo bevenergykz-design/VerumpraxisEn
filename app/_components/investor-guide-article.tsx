@@ -498,7 +498,7 @@ function RuContent() {
 
 export default function InvestorGuideArticle() {
   const { locale } = useI18n();
-  const isEn = locale === 'en' || locale === 'zh';
+  const isEn = (locale as string) === 'en' || (locale as string) === 'zh';
 
   return (
     <section className="gradient-dark" style={{ minHeight: '100vh' }}>

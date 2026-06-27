@@ -8,7 +8,7 @@ import { ArrowLeft } from 'lucide-react';
 export default function PrivacyContent() {
   const { t, locale } = useI18n();
 
-  const isRu = locale === 'ru';
+  const isRu = (locale as string) === 'ru';
 
   const backLabel = isRu ? 'Вернуться на главную' : 'Back to homepage';
   const titleMain = isRu
